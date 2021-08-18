@@ -1,0 +1,11 @@
+<ng-container *ngFor="let line of lineProps">
+  <app-line-item [data]="line" [navKey]="navKey" [isPrevious]="isPrevious">
+  </app-line-item>
+</ng-container>
+<ng-container *ngFor="let line of navProps">
+  <h4>
+    <strong>{{line[0]}}</strong>
+  </h4>
+  <app-entity-item [data]="line[1]" [navKey]="line[0]" [isPrevious]="isPrevious">
+  </app-entity-item>
+</ng-container>

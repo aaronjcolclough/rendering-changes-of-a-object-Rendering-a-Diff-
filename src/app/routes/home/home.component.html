@@ -1,0 +1,3 @@
+<ng-container *ngIf="dataSvc.diff$ | async as diff">
+  <diff-wrapper fxLayout="row" fxLayoutAlign="start stretch" [diff]="diff" fxFlex></diff-wrapper>
+</ng-container>

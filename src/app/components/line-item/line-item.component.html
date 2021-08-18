@@ -1,0 +1,4 @@
+<section fxFlex gdAreas="key value value" gdAlignRows="space-between end" [ngClass]="setBackground()">
+  <p gdArea="key">{{data[0]}}:</p>
+  <p *ngIf="!isObject(data[1])" gdArea="value">{{data[1]}}</p>
+</section>

@@ -1,0 +1,15 @@
+<section class="mat-typography mat-app-background app-frame" 
+         [ngClass]="themer.isLight ? 'app-light' : 'app-dark'">
+	<mat-toolbar>
+		<span fxFlex>Home</span>
+		<button mat-icon-button
+            (click)="themer.toggleTheme()">
+    <mat-icon [color]="themer.isLight ? 'accent' : 'default'">
+      {{themer.isLight ? 'brightness_5' : 'brightness_3'}}
+    </mat-icon>
+  </button>
+	</mat-toolbar>
+  <section class="app-container">
+	  <router-outlet></router-outlet>
+  </section>
+</section>
